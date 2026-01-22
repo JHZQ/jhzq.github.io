@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Bootstrap Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- Import font awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- ******************** -->
+  <!-- * Navbar -->
+  <!-- ******************** -->
+  <nav class="navbar">
+    <div class="container">
+      <button class="navbar-toggler" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="navbar-nav">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#works">Works</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ******************** -->
+  <!-- * Hero section -->
+  <!-- ******************** -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-left">
+          <img class="hero-profile-image" src="assets/img/logo.png" alt="Profile Photo" />
+          <h1 class="highlight">Jeremy</h1>
+          <p>Aspiring Full Stack Developer</p>
+          <p class="hero-text">
+            Making life so simple that you can put it at the back of your head
+            and focus on the important things.
+          </p>
+          <button class="btn btn-primary" onclick="scrollToSection('skills')">
+            View My Skills
+          </button>
+        </div>
+        <div class="hero-right">
+          <div class="hero-info-box">
+            <div class="hero-info-item">
+              <h4>Professional</h4>
+              <p>
+                Doing things properly, accurately, consistently to ensure
+                smooth workflow
+              </p>
+            </div>
+            <div class="hero-info-item">
+              <h4>Logical</h4>
+              <p>
+                Analytical thinking to break down problems into bite-sized
+                pieces, step-by-step approaches to solve issues in an orderly
+                manner.
+              </p>
+            </div>
+            <div class="hero-info-item">
+              <h4>Support-oriented</h4>
+              <p>
+                Supporting the team by assisting them, listening to them,
+                solving issues with them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******************** -->
+  <!-- * Skills section -->
+  <!-- ******************** -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="row g-4">
+        <!-- Front-End Skills Column -->
+        <div class="col-md-4">
+          <div class="skill-category">
+            <h3 class="category-title">Front-End</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back-End Skills Column -->
+        <div class="col-md-4">
+          <div class="skill-category">
+            <h3 class="category-title">Back-End</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-microsoft"></i>
+                <span>Azure</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-leaf"></i>
+                <span>Spring Boot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools Column -->
+        <div class="col-md-4">
+          <div class="skill-category">
+            <h3 class="category-title">Tools</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>VS Code</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-laptop-code"></i>
+                <span>IntelliJ</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-paper-plane"></i>
+                <span>Postman</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******************** -->
+  <!-- * About me section -->
+  <!-- ******************** -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Welcome traveler! Have a seat, take a good long rest</h3>
+          <p>
+            Hands-on IT professional who enjoys knowing the ins and outs of a system and researching the unknown
+          </p>
+          <p>
+            I love games, food, music. When it comes to video games and the game of life, I enjoy a support role where I
+            make sure my teammates is well equipped and well rested
+          </p>
+          <p>
+            Work or play, I always aim to be versatile and consistent in my skills so that I can deliver strong quality
+            in an effortless manner. Being versatile gives me plenty of paths to explore, being consistent clears the
+            muddy paths for a smooth journey.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******************** -->
+  <!-- * Featured works section -->
+  <!-- ******************** -->
+  <section id="works">
+    <div class="container">
+      <h2 class="section-title">Featured Works</h2>
+
+      <div class="project-container">
+        <div class="project-image">
+          <img src="assets/img/colmar-academy.png" alt="">
+        </div>
+        <div class="project-details">
+          <h3>Colmar Academy</h3>
+          <p class="project-skills">
+            <strong>Skills used:</strong> HTML, CSS, Bootstrap
+          </p>
+          <p class="project-description">
+            A simple website of an academy showcasing the highlights of the school, all sorts of events, courses
+            available, thesis exhibition
+          </p>
+          <ul class="project-features">
+            <li><i class="fa-solid fa-circle"></i> Fully responsive design across all devices</li>
+            <li><i class="fa-solid fa-circle"></i> Clean and modern user interface</li>
+            <li><i class="fa-solid fa-circle"></i> Interactive navigation and sections</li>
+            <li><i class="fa-solid fa-circle"></i> Semantic HTML structure</li>
+          </ul>
+          <a href="https://github.com/JHZQ/colmar-academy"><i class="fab fa-github"></i>GitHub Link</a>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="project-image">
+          <img src="assets/img/find-your-hat.png" alt="">
+        </div>
+        <div class="project-details">
+          <h3>Find Your Hat</h3>
+          <p class="project-skills">
+            <strong>Skills used:</strong> JavaScript
+          </p>
+          <p class="project-description">
+            Terminal-based video game made entirely in JavaScript, player must navigate through the dangerous forest to
+            find their hat. Be careful of falling down holes or stepping out of the forest!
+          </p>
+          <ul class="project-features">
+            <li><i class="fa-solid fa-circle"></i> Interactive terminal-based gameplay</li>
+            <li><i class="fa-solid fa-circle"></i> Random map generation for replayability</li>
+            <li><i class="fa-solid fa-circle"></i> Object-oriented programming structure</li>
+            <li><i class="fa-solid fa-circle"></i> Input validation and error handling</li>
+          </ul>
+          <a href="https://github.com/JHZQ/find-your-hat"><i class="fab fa-github"></i>GitHub Link</a>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="project-image">
+          <img src="assets/img/voltara.png" alt="">
+        </div>
+        <div class="project-details">
+          <h3>Voltara</h3>
+          <p class="project-skills">
+            <strong>Skills used:</strong> HTML, CSS, Bootstrap, JavaScript, Java, MySQL, Spring Boot
+          </p>
+          <p class="project-description">
+            A learning platform website designed to teach embedded systems and IoT development (Arduino, ESP32,
+            Raspberry Pi, Microcontrollers, Sensors, etc.)
+          </p>
+          <ul class="project-features">
+            <li><i class="fa-solid fa-circle"></i> Full-stack web application with Spring Boot backend</li>
+            <li><i class="fa-solid fa-circle"></i> User authentication and authorization system</li>
+            <li><i class="fa-solid fa-circle"></i> MySQL database for storing courses and user progress</li>
+            <li><i class="fa-solid fa-circle"></i> Interactive learning modules and tutorials</li>
+            <li><i class="fa-solid fa-circle"></i> RESTful API architecture</li>
+          </ul>
+          <a href="https://github.com/voltara1/voltara1.github.io"><i class="fab fa-github"></i>GitHub Link</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ******************** -->
+  <!-- * Footer section -->
+  <!-- ******************** -->
+  <footer id="contact">
+    <div class="container text-center">
+      <h3 class="mb-4">Contact Me</h3>
+      <div class="social-links mb-4">
+        <a href="https://github.com/JHZQ"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jhzq/"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:jeremyhzqwork@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link to JavaScript -->
+  <script src="assets/js/script.js"></script>
+  <!-- Bootstrap JavaScript Library -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
